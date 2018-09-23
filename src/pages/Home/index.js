@@ -59,7 +59,8 @@ class Home extends React.Component {
                     .filter(article =>{
                         return (
                             article.title.toLowerCase().includes(this.state.keyword.toLowerCase()) ||
-                            article.content.toLowerCase().includes(this.state.keyword.toLowerCase()) 
+                            article.content.toLowerCase().includes(this.state.keyword.toLowerCase()) ||
+                            article.author.toLowerCase().includes(this.state.keyword.toLowerCase()) 
                         );
                     })
                     
